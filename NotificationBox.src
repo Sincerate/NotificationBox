@@ -1,0 +1,145 @@
+/*
+ * Auther
+ * @sincerate
+ * check his github out! :)
+ */
+
+package com.sincerate;
+
+import java.awt.Color;
+import java.awt.FlowLayout;
+import java.awt.event.WindowEvent;
+import java.util.Timer;
+import java.util.TimerTask;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class Main {
+	public static void main(String[] args) {
+		
+			//Change these strings below and nothing else unless you want it to break.
+		
+			String title = "Note"; //(Most likely it's not gonna appear due to the box being small.)
+			String text =  "Hello There!";
+			int timer = 50*50; //2.5 Seconds. Change this val for how long you want the message to stay up.
+			
+			//JFrame itself.
+			 JFrame frame = new JFrame(title);
+				frame.setVisible(true);
+				frame.setResizable(false);
+				frame.setSize(200, 120);
+				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+				
+				frame.getContentPane().setBackground(Color.darkGray);
+				frame.setLocation(1735, 850);
+				frame.getContentPane().setLayout(new FlowLayout());
+				
+				//JLabels (Text)
+				JLabel mtext = new JLabel(text);
+				mtext.setForeground(Color.black);
+				
+				frame.getContentPane().add(mtext); 
+				
+				try {
+					Thread.sleep(timer);
+					frame.dispatchEvent(new WindowEvent(frame, WindowEvent.WINDOW_CLOSING));
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+	
+		
+			
+				
+					
+						
+					
+				
+			
+		
+	
+				
+				
+					
+				
+					
+				
+ 
+				
+			
+				
+					
+					
+					
+						
+					
+					
+				
+					
+					
+
+				
+				
+				
+				
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				//Something useless: (ob classes)
+	}
+}
+		 
+
+
+		
+

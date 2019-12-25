@@ -1,0 +1,148 @@
+/*
+ * Auther
+ * @sincerate
+ * check his github out! :)
+ */
+
+package com.sincerate;
+
+import java.awt.Color;
+import java.awt.FlowLayout;
+import java.awt.event.WindowEvent;
+import java.util.Timer;
+import java.util.TimerTask;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class Main extends JFrame {
+	public static void main(String[] args) {
+		
+			//Change these strings below and nothing else unless you want it to break.
+		
+			String text =  "Hello There!";
+			int timer = 50*50; //2.5 Seconds. Change this val for how long you want the message to stay up.
+			int tSizeWidth = 10; //Change the width of the text
+			int tSizeHeight = 10; //Change the height of the text.
+			
+			
+			//JFrame itself.
+			 JFrame frame = new JFrame();
+				frame.setResizable(false);
+				frame.setSize(200, 120);
+				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+				frame.getContentPane().setBackground(Color.DARK_GRAY);
+				frame.setLocation(1735, 850);
+				frame.getContentPane().setLayout(new FlowLayout());
+				frame.setUndecorated(true);
+				frame.setVisible(true);
+				
+				//JLabels (Text)
+				JLabel mtext = new JLabel(text);
+				mtext.setForeground(Color.black);
+				mtext.setSize(tSizeWidth, tSizeHeight);
+				
+				frame.getContentPane().add(mtext); 
+				
+				try {
+					Thread.sleep(timer);
+					frame.dispatchEvent(new WindowEvent(frame, WindowEvent.WINDOW_CLOSING));
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+	
+		
+			
+				
+					
+						
+					
+				
+			
+		
+	
+				
+				
+					
+				
+					
+				
+ 
+				
+			
+				
+					
+					
+					
+						
+					
+					
+				
+					
+					
+
+				
+				
+				
+				
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				//Something useless: (ob classes)
+	}
+}
+		 
+
+
+		
+
